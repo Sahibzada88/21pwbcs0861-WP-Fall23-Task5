@@ -1,0 +1,158 @@
+$color_1: #000;
+$color_2: #fff;
+$color_3: #333;
+$color_4: #666;
+$color_5: #008CBA;
+$font-family_1: Arial, sans-serif;
+$background-color_1: #f5f5f5;
+$background-color_2: #fff;
+$background-color_3: #272727;
+$background-color_4: #f9f9f9;
+$background-color_5: #008CBA;
+$background-color_6: #333;
+
+/* Sections */
+/* Menu Section */
+/* Our Team Section */
+/* Home Section - Images in one row */
+/* Contact Form */
+/* Footer */
+/* Responsive Styles */
+body {
+	font-family: $font-family_1;
+	margin: 0;
+	padding: 0;
+	background-color: $background-color_6;
+}
+#header {
+	background-color: $background-color_2;
+	color: $color_1;
+	text-align: center;
+	padding: 20px 0;
+	img {
+		width: 250px;
+		height: 200px;
+	}
+}
+#nav {
+	background-color: $background-color_3;
+	padding: 10px 0;
+	text-align: center;
+	ul {
+		list-style-type: none;
+		padding: 0;
+	}
+	li {
+		display: inline;
+		margin-right: 20px;
+	}
+	a {
+		text-decoration: none;
+		color: $color_1;
+		font-weight: bold;
+	}
+}
+
+.team-images {
+	margin-top: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	img {
+		flex: 1;
+		max-width: 30%;
+		height: auto;
+		margin: 10px;
+	}
+}
+#home {
+	.home-images {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		img {
+			width: 100%;
+			
+		}
+	}
+}
+
+#menu {
+	margin-top: 30px;
+	background-color: $background-color_4;
+	#menu_sec{
+		display: flex;
+		flex-direction: row;
+		padding: 20px;
+		align-content: center;
+		.card{
+			width: 45%;
+			margin-right: 10px;
+		}
+	}
+}
+
+#contact{
+	
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+	form {
+		max-width: 400px;
+		width: 100%;
+        margin-left: 15vw;
+	}
+	label {
+		font-size: 16px;
+		font-weight: bold;
+		display: block;
+	}
+	input {
+		font-size: 16px;
+		padding: 10px;
+		width: 100%;
+		margin-bottom: 10px;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+	}
+	textarea {
+		font-size: 16px;
+		padding: 10px;
+		width: 100%;
+		margin-bottom: 10px;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+	}
+	button {
+		font-size: 16px;
+		background-color: $background-color_5;
+		color: $color_2;
+		padding: 10px 20px;
+		border: none;
+		cursor: pointer;
+		width: 100%;
+	}
+}
+#footer {
+	background-color: $background-color_6;
+	color: $color_2;
+	text-align: center;
+	padding: 10px 0;
+    margin-top: 8px;
+    margin-bottom: 8px;
+	p {
+		font-size: 14px;
+	}
+}
+@media (max-width: 768px) {
+	#nav {
+		ul {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		li {
+			margin: 10px;
+		}
+	}
+}

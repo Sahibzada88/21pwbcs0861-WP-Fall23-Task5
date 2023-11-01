@@ -1,0 +1,144 @@
+/* Sections */
+/* Menu Section */
+/* Our Team Section */
+/* Home Section - Images in one row */
+/* Contact Form */
+/* Footer */
+/* Responsive Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+}
+
+#header {
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  padding: 20px 0;
+}
+#header img {
+  width: 250px;
+  height: 200px;
+}
+
+#nav {
+  background-color: #272727;
+  padding: 10px 0;
+  text-align: center;
+}
+#nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+#nav li {
+  display: inline;
+  margin-right: 20px;
+}
+#nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.team-images {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.team-images img {
+  flex: 1;
+  max-width: 30%;
+  height: auto;
+  margin: 10px;
+}
+
+#home .home-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#home .home-images img {
+  width: 100%;
+}
+
+#menu {
+  margin-top: 30px;
+  background-color: #f9f9f9;
+}
+#menu #menu_sec {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  align-content: center;
+}
+#menu #menu_sec .card {
+  width: 45%;
+  margin-right: 10px;
+}
+
+#contact {
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+#contact form {
+  max-width: 400px;
+  width: 100%;
+  margin-left: 15vw;
+}
+#contact label {
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+}
+#contact input {
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+#contact textarea {
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+#contact button {
+  font-size: 16px;
+  background-color: #008CBA;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+#footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+#footer p {
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  #nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #nav li {
+    margin: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */
